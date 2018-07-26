@@ -13,11 +13,25 @@
 - 출력
 상근이가 배달하는 봉지의 최소 개수를 출력한다. 만약, 정확하게 N킬로그램을 만들 수 없다면 -1을 출력한다.
  */
+import java.util.Scanner;
+
 public class b02_2839 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		Scanner sc = new Scanner(System.in);
+		System.out.print("킬로그램 입력(3<=N<=5000) :");
+		int n = sc.nextInt();
+		int rest = 0;
+		if (n<=5) {
+			n = 1;
+		}else {
+			rest = n%5;
+			n /= 5;
+			if (rest<4) n++;
+			else  n = n+2;
+		}
+		System.out.println("최소 봉지 개수는 :"+n);
 	}
 
 }
