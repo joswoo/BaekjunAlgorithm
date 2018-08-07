@@ -1,12 +1,8 @@
-<img width="1000" alt="default" 
-src="https://user-images.githubusercontent.com/29402714/43506689-c44daf64-95a5-11e8-99e5-f858b01bddc1.png">
-
-Code 1
-```java
 import java.util.Scanner;
 
+
 public class b05_1065 {
-	private static int hanNum(int n) {
+	static int hanNum(int n) {
 		int a = 1;
 		int count = 0;
 		while(a<=n) {
@@ -32,11 +28,9 @@ public class b05_1065 {
 		System.out.println(num);
 	}
 }
-```
-Code 2
-```java
-import java.util.Scanner;
 
+
+/*
 public class b05_1065 {
 	public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -61,25 +55,4 @@ public class b05_1065 {
 		return 0;
 	}
 }
-```
-
-Junit Test Case
-```java
-import static org.junit.jupiter.api.Assertions.*;
-
-import org.junit.jupiter.api.Test;
-
-class b05_1065Test {
-
-	@Test
-	void test() {
-		b05_1065 b05_1065Test = new b05_1065();
-		assertEquals(99, b05_1065Test.hanNum(99));
-		assertEquals(99, b05_1065Test.hanNum(110));
-		assertEquals(100, b05_1065Test.hanNum(111));
-		assertEquals(101, b05_1065Test.hanNum(123));
-		assertEquals(144, b05_1065Test.hanNum(1000));
-	}
-
-}
-```
+*/
