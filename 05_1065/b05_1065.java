@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-
+// Code type1
 public class B05_1065 {
 	static int hanNum(int n) {
 		int a = 1;
@@ -30,7 +30,8 @@ public class B05_1065 {
 }
 
 
-/*
+
+/* Code type2
 public class B05_1065 {
 	public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
